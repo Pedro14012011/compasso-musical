@@ -54,20 +54,20 @@
         color: #d32f2f;
       }
 
-      .listaNavegacao{
+      .listaNavegacao {
         display: flex;
         gap: 2rem;
       }
 
-      .LinkNav{
+      .LinkNav {
         font-weight: 500;
-        transition:color 0.3s ease;
+        transition: color 0.3s ease;
       }
-      .LinkNav:hover{
+      .LinkNav:hover {
         color: #d32f2f;
       }
 
-      .botaoPrincipal{
+      .botaoPrincipal {
         display: inline-block;
         background-color: #d32f2f;
         color: #ffffff;
@@ -78,11 +78,20 @@
         transition: background-color 0.3s ease;
       }
 
-      .botaoPrincipal:hover{
+      .botaoPrincipal:hover {
         background-color: #b71b1b;
         color: #ffffff;
       }
 
+      .container {
+        padding: 4rem 5%;
+      }
+
+      .tituloSecao {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+      }
     </style>
   </head>
   <body>
@@ -114,34 +123,58 @@
 
     <!-- Conteudo Principal-->
     <main>
-      <section id="hero" class="secaoHero" style="background-color: #eceff1; text-align:center; padding: 5rem 2rem; border-bottom: 4px solid #d32f2f;">
-        <h2 style="font-size: 3rem; color: #1a1a1a;">O som da sua vida começa aqui</h2>
-        <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto 2rem auto;">Encontre as melhores marcas de violino, trompetes ou violões</p>
+      <section
+        id="hero"
+        class="secaoHero"
+        style="
+          background-color: #eceff1;
+          text-align: center;
+          padding: 5rem 2rem;
+          border-bottom: 4px solid #d32f2f;
+        "
+      >
+        <h2 style="font-size: 3rem; color: #1a1a1a">
+          O som da sua vida começa aqui
+        </h2>
+        <p
+          style="font-size: 1.2rem; max-width: 600px; margin: 0 auto 2rem auto"
+        >
+          Encontre as melhores marcas de violino, trompetes ou violões
+        </p>
         <img
           src="Banda de Rock.jpg"
           alt="Banda de Rock num show usando os instrumentos musicais da Compasso Musical"
           width="600"
-          style="border-radius: 12px; box-shadow:0 10px 20px rgba(0, 0, 0, 0.5); "
+          style="
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+          "
         />
         <br /><br />
         <a href="#instrumentos" class="botaoPrincipal">Ver nossas ofertas</a>
       </section>
 
       <!--Seção Sobre-->
-      <section id="sobre">
-        <h2>Sobre a Compasso Musical</h2>
-        <p>
-          Nossa loja nasceu da paixão pela música. Nossa missão é entregar
-          qualidade sonora tanto para quem está aprendendo os primeiro acordes
-          quanto para música profissionais.
-        </p>
-        <ul>
-          <li>
-            Todos os instrumentos dão revistados pro nossa equipe técnica.
-          </li>
-          <li>Garantia estendida de fábrica</li>
-          <li>Suporte a atendimento feito por músicos reais.</li>
-        </ul>
+      <section id="sobre" class="container">
+        <h2 class="tituloSecao">Sobre a Compasso Musical</h2>
+        <div style="max-width:  800px; margin:0 auto; text-align:center;">
+          <p>
+            Nossa loja nasceu da paixão pela música. Nossa missão é entregar
+            qualidade sonora tanto para quem está aprendendo os primeiro acordes
+            quanto para música profissionais.
+          </p>
+          <ul style="text-align: left; display: inline-block; margin-top: 1rem">
+            <li style="margin-bottom: 0.5rem">
+              ✔Todos os instrumentos dão revistados pro nossa equipe técnica.
+            </li>
+            <li style="margin-bottom: 0.5rem">
+              ✔Garantia estendida de fábrica
+            </li>
+            <li style="margin-bottom: 0.5rem">
+              ✔Suporte a atendimento feito por músicos reais.
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- Produtos-->
